@@ -687,7 +687,6 @@
           <p class="cform-lab"><b>Canales Lab</b><br>
           UCLA Anesthesiology &amp; Perioperative Medicine<br>
           757 Westwood Plaza · Los Angeles, CA 90095</p>
-          <p class="cform-mail"><a href="mailto:lab.email@mednet.ucla.edu">lab.email@mednet.ucla.edu</a></p>
           <p class="cform-links">
             <a href="https://profiles.ucla.edu/cecilia.canales" target="_blank" rel="noopener">UCLA Faculty Profile</a><br>
             <a href="https://sim.ucla.edu" target="_blank" rel="noopener">UCLA Simulation Center</a><br>
@@ -832,6 +831,7 @@
           subj=document.getElementById('cfSubject').value.trim(),
           msg=document.getElementById('cfMessage').value.trim();
     const body=encodeURIComponent(msg+'\n\n— '+first+' '+last+' ('+mail+')');
+    /* Set the lab's real inbox here to receive contact drafts: */
     window.location.href='mailto:lab.email@mednet.ucla.edu?subject='+encodeURIComponent('[Canales Lab] '+subj)+'&body='+body;
   });}
 
