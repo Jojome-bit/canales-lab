@@ -98,10 +98,11 @@
   .about-grid h2{font-size:1.9rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--heading); line-height:1.25;}
   .about-grid h3{font-size:1.15rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--blue); margin:10px 0 18px;}
   .about-grid p{margin-bottom:16px;}
-  .media-links{margin-top:26px;}
-  .media-links a{display:flex; gap:12px; align-items:flex-start; font-weight:600; font-style:italic; color:var(--blue); margin-bottom:16px; font-size:.92rem; line-height:1.5;}
+  .media-links{margin-top:30px;}
+  .media-links .ml-head{display:block; font-size:.72rem; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--gray); margin-bottom:14px;}
+  .media-links a{display:block; border-left:3px solid var(--blue); padding:2px 0 2px 14px; font-weight:600; font-style:italic; color:var(--blue); margin-bottom:14px; font-size:.92rem; line-height:1.5;}
   .media-links a:hover{text-decoration:underline;}
-  .media-links .ic{flex:0 0 auto; margin-top:2px;}
+  .media-links .src{display:block; font-size:.68rem; font-weight:700; font-style:normal; letter-spacing:.14em; text-transform:uppercase; color:var(--gray); margin-bottom:1px;}
   .about-photo{background:var(--lightgray); border:1px solid var(--hair); aspect-ratio:4/3.4; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:8px; color:var(--gray);}
   .about-photo b{font-size:.78rem; letter-spacing:.14em; text-transform:uppercase; font-weight:600;}
   .about-photo small{font-size:.72rem;}
@@ -279,7 +280,7 @@
       <a data-page="join">Join Us &amp; Contact</a>
       <span class="search-box" id="searchBox">
         <input id="searchInput" type="text" placeholder="Search the site…" aria-label="Search">
-        <button id="searchBtn" aria-label="Search">🔍</button>
+        <button id="searchBtn" aria-label="Search"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6.8" cy="6.8" r="5"/><line x1="10.6" y1="10.6" x2="15" y2="15"/></svg></button>
       </span>
     </nav>
   </div>
@@ -305,9 +306,10 @@
         <p>We are a perioperative research lab focused on brain health, frailty, and equity in older adults undergoing surgery. Our research aims to understand and prevent perioperative neurocognitive disorders, to identify frailty at the bedside using tools like point-of-care ultrasound, and to make cognitive screening work for every patient, including those who prefer languages other than English.</p>
         <p>We use this knowledge to build better preoperative screening pathways, from telehealth geriatric assessment to equity-informed applications of new technology, and we translate our findings into clinical training through the UCLA Simulation Center.</p>
         <div class="media-links">
-          <a href="https://www.newswise.com/articles/building-a-health-system-that-speaks-your-language" target="_blank" rel="noopener"><span class="ic">📰</span>Building a Health System That Speaks Your Language (Newswise)</a>
-          <a href="https://medschool.ucla.edu/news-article/anesthesia-side-effects" target="_blank" rel="noopener"><span class="ic">🎧</span>Anesthesia Side Effects and the Aging Brain (UCLA Med School)</a>
-          <a href="https://newsroom.ucla.edu/dept/faculty/cecilia-canales-national-academy-medicine-diagnostic-excellence" target="_blank" rel="noopener"><span class="ic">🏛️</span>Dr. Canales Selected as NAM Scholar in Diagnostic Excellence (UCLA Newsroom)</a>
+          <span class="ml-head">In the News</span>
+          <a href="https://www.newswise.com/articles/building-a-health-system-that-speaks-your-language" target="_blank" rel="noopener"><span class="src">Newswise</span>Building a Health System That Speaks Your Language</a>
+          <a href="https://medschool.ucla.edu/news-article/anesthesia-side-effects" target="_blank" rel="noopener"><span class="src">UCLA Medical School</span>Anesthesia Side Effects and the Aging Brain</a>
+          <a href="https://newsroom.ucla.edu/dept/faculty/cecilia-canales-national-academy-medicine-diagnostic-excellence" target="_blank" rel="noopener"><span class="src">UCLA Newsroom</span>Dr. Canales Selected as NAM Scholar in Diagnostic Excellence</a>
         </div>
       </div>
       <div class="about-photo has-img">
