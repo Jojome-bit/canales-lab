@@ -132,6 +132,15 @@ const TEAM = [
         about: "Aryaman grew up in Santa Clarita, California, and graduated from UCLA with a B.S. in Psychobiology. He joined the perioperative research lab as an undergraduate, driven by his interest in neuroscience, aging, and patient care. His work focuses on developing programs aimed at improving perioperative care and recovery for older surgical patients.",
         hobbies: "Outside the lab, Aryaman enjoys playing guitar, basketball, finding new music, working out, cooking, watching anime, and gaming. He especially loves traveling and hopes to visit every continent at least once (yes, even Antarctica). He also enjoys trying new foods, spending time with friends and family, and learning an unreasonable number of useless facts about space.",
         future: "Aryaman plans to attend medical school and pursue a career in anesthesiology. He hopes to continue conducting research in perioperative medicine and contribute to improving how postoperative neurocognitive disorders are recognized, prevented, and managed."
+      },
+      {
+        name: "Fawziah Fariha",
+        role: "Research Volunteer",
+        school: "M.S. Biomedical Sciences, Icahn School of Medicine at Mount Sinai",
+        photo: "images/team/fawziah-fariha.jpg",
+        about: "Fariha was born in Bangladesh and moved to New York at the age of nine. She double majored in Psychology and Theology at Fordham University, with a minor in Biological Sciences on the Pre-Health track. After graduating, she participated in the UCLA PREP program in 2023, where she shadowed Dr. Yu in Anesthesiology, who connected her to Dr. Canales. Fariha then completed her Master of Biomedical Sciences at the Icahn School of Medicine at Mount Sinai, with a thesis on white matter and suicidal behavior using UK Biobank neuroimaging data. Since January 2026, she has volunteered with Dr. Canales's team, working remotely on two studies. The first draws on interviews with anesthesiology staff to understand how delirium screening is carried out in the PACU. The second uses statewide inpatient data from Georgia to ask whether a patient's preferred language is associated with outcomes after cesarean delivery.",
+        hobbies: "In her free time, Fariha loves to dance. She has performed hip hop and Bollywood since high school, from school talent shows to cultural showcases and charity events. When she isn't on stage, she's usually painting landscapes or exploring photography, taking nature shots with her digital camera on road trips.",
+        future: "Fariha plans to pursue MD/PhD programs and is keeping her specialty options open. She plans to continue research throughout her training, with the goal of developing new interventions for patients and addressing healthcare disparities. One day, she would like to open a practice in the United States and set up free clinics in Bangladesh."
       }
     ]
   }
