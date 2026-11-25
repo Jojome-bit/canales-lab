@@ -56,6 +56,14 @@ Open `content/news.js`, copy one `{ … },` block to the **top** of the list (ne
 
 In `index.html`, find the **Publications** section by searching for `pg-publications`. Each paper is one line starting with `<div class="pub">`, grouped under year headings like `<div class="sub-center">2026</div>`. Copy a line, paste it under the right year, and change the PubMed link, title, authors, and journal.
 
+### Add a photo to the Lab Gallery
+
+Upload the photo to `images/events/`. Then in `index.html`, search for `class="gallery"` and add a line like this inside it:
+
+```html
+<figure class="g-item"><img src="images/events/lab-dinner-2026.jpg" alt="Lab dinner, spring 2026"><figcaption>Lab dinner 2026</figcaption></figure>
+```
+
 ### Change the contact email
 
 The contact email appears in two places in `index.html`, so search for `mailto:` and change both:
