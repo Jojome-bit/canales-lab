@@ -738,7 +738,7 @@
   function el(tag,cls,text){ const e=document.createElement(tag); if(cls)e.className=cls; if(text)e.textContent=text; return e; }
   function initials(name){ return name.split(/\s+/).filter(w=>/^[A-Za-z]/.test(w)).map(w=>w[0]).slice(0,2).join('').toUpperCase(); }
   function avatarFor(m){
-    if(m.photo){ const im=el('img','avatar-img'); im.src=m.photo; im.alt=m.name; im.loading='lazy'; return im; }
+    if(m.photo){ const im=el('img','avatar-img'); im.alt=m.name; im.onerror=()=>im.replaceWith(el('div','avatar',initials(m.name))); im.src=m.photo; return im; }
     return el('div','avatar',initials(m.name));
   }
   const teamList=document.getElementById('teamList');
@@ -775,7 +775,7 @@
     document.getElementById('modalAff').textContent=m.school||'';
     const av=document.getElementById('modalAvatar');
     av.innerHTML='';
-    if(m.photo){const im=document.createElement('img'); im.src=m.photo; im.alt=''; im.style.cssText='width:110px;height:110px;border-radius:50%;object-fit:cover;object-position:50% 15%;'; av.appendChild(im); av.style.background='none'; av.style.border='none';}
+    if(m.photo){const im=document.createElement('img'); im.alt=''; im.onerror=()=>{av.innerHTML=''; av.textContent=initials(m.name); av.style.background=''; av.style.border='';}; im.src=m.photo; im.style.cssText='width:110px;height:110px;border-radius:50%;object-fit:cover;object-position:50% 15%;'; av.appendChild(im); av.style.background='none'; av.style.border='none';}
     else{av.textContent=initials(m.name); av.style.background=''; av.style.border='';}
     let any=false;
     [['mAbout','about'],['mHobbies','hobbies'],['mFuture','future'],['mOutside','outside']].forEach(([id,key])=>{
